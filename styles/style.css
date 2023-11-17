@@ -16,7 +16,8 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 h1,
@@ -39,17 +40,12 @@ ol {
 }
 
 .content {
-  position: absolute;
   display: grid;
   width: 1200px;
-  height: 815px;
   grid-template-columns: 711px 399px;
-  grid-template-rows: 600px;
   padding-left: 30px;
   padding-right: 30px;
   align-items: end;
-  top: 0; right: 0; bottom: 0; left: 0;
-  margin: auto;
   gap: 30px;
 }
 
@@ -74,7 +70,7 @@ ol {
 
 .content__details {
   display: grid;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 240px 300px;
 }
 
 .title {
@@ -83,7 +79,6 @@ ol {
   line-height: 0.94;
   color: white;
   text-transform: uppercase;
-  padding-top: 67px;
 }
 
 .content__accent {
