@@ -229,8 +229,16 @@ input[type="checkbox"]:checked + span::after {
 }
 
 .search-form__textfield {
+  color: #fff;
   appearance: none;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid gray;
+  border-top: 2px solid gray;
+  font-family: inherit;
+  font-size: 18px;
+  width: 222px;
 }
 
 .search-form__textfield:focus {
@@ -244,23 +252,13 @@ input[type="checkbox"]:checked + span::after {
   margin-right: 15px;
 }
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   cursor: pointer;
   text-decoration: underline;
 }
 
 .search-form__label:has(:focus-visible) {
   border: 1px solid white;
-}
-
-.search-form__textfield {
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid gray;
-  border-top: 2px solid gray;
-  font-family: inherit;
-  font-size: 18px;
-  width: 222px;
 }
 
 .search-form__textfield:active {
